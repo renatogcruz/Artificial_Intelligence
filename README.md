@@ -52,7 +52,7 @@ First example (Chapter 1) of Clinton Sheppard's book Genetic Algorithms with Pyt
 1. Evolution of a salesman: A complete genetic algorithm tutorial for Python - [link](https://towardsdatascience.com/evolution-of-a-salesman-a-complete-genetic-algorithm-tutorial-for-python-6fe5d2b3ca35)
 Hawker problem - [ezstoltz](https://github.com/ezstoltz/genetic-algorithm/blob/master/genetic_algorithm_TSP.ipynb)
 2. Genetic Algorithms with Python (book) - [link](https://www.amazon.com/Genetic-Algorithms-Python-Clinton-Sheppard/dp/1540324001)
-
+3. Genetic Algorithm Python of [Ahmed Gad](https://github.com/ahmedfgad/GeneticAlgorithmPython) - ***not st***.
 ---
 
 ### read
