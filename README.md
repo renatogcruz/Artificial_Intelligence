@@ -36,6 +36,10 @@ STOP
 
 First example (Chapter 1) of Clinton Sheppard's book Genetic Algorithms with Python
 
+3. [optimizing list numbers](https://lethain.com/genetic-algorithms-cool-name-damn-simple/)
+
+"We're going to optimize a very simple problem: trying to create a list of N numbers that equal X when summed together. [...]" 
+
 ---
 
 #### Particle Swarm Optimization - PSO
@@ -52,7 +56,10 @@ First example (Chapter 1) of Clinton Sheppard's book Genetic Algorithms with Pyt
 1. Evolution of a salesman: A complete genetic algorithm tutorial for Python - [link](https://towardsdatascience.com/evolution-of-a-salesman-a-complete-genetic-algorithm-tutorial-for-python-6fe5d2b3ca35)
 Hawker problem - [ezstoltz](https://github.com/ezstoltz/genetic-algorithm/blob/master/genetic_algorithm_TSP.ipynb)
 2. Genetic Algorithms with Python (book) - [link](https://www.amazon.com/Genetic-Algorithms-Python-Clinton-Sheppard/dp/1540324001)
-3. Genetic Algorithm Python of [Ahmed Gad](https://github.com/ahmedfgad/GeneticAlgorithmPython) - ***not st***.
+3. Irrational Exuberance! - [Will Larson](https://lethain.com/genetic-algorithms-cool-name-damn-simple/)
+4. Genetic Algorithm Python of [Ahmed Gad](https://github.com/ahmedfgad/GeneticAlgorithmPython) - ***not st***.
+5.  Genetic Algorithms with Python - [Cℓinton Sheppard](https://github.com/handcraftsman/GeneticAlgorithmsWithPython) - ***not st***.
+
 ---
 
 ### read
