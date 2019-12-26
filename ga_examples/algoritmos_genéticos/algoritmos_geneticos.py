@@ -5,11 +5,30 @@ sobre: Construa passo a passo um algoritmo de Inteligência
        Artificial aplicado no cenário de transporte de produtos!
 """
 
+from random import random
+
 class Produto():
 	def __init__(self, nome, espaco, valor):
 		self.nome = nome
 		self.espaco = espaco
 		self.valor = valor
+
+class Individuo():
+	def __init__(self, espacos, valores, limite_espacos, geracao=0):
+		self.espacos = espacos
+		self.valores = valores
+		self.limite_espacos = limite_espacos
+		self.nota_avaliacao = 0
+		self.geracao = geracao
+		self.cromossomo = []
+
+		for i in range(len(espacos)):
+			if random() < 0.5:
+				self.cromossomo.append("0")
+			else:
+				self.cromossomo.append("1")
+
+
 
 if __name__ == '__main__':
 	#p1 = Produto("Iphone 6", 0.0000899, 2199.12)
@@ -26,8 +45,27 @@ if __name__ == '__main__':
 	lista_produtos.append(Produto("Geladeira Brastemp", 0.635, 849.00))
 	lista_produtos.append(Produto("Geladeira Consul", 0.870, 1199.00))
 
+	#for produto in lista_produtos:
+	#	print(produto.nome)
+
+	espacos = []
+	valores = []
+	nomes = []
 	for produto in lista_produtos:
-		print(produto.nome)
+		espacos.append(produto.espaco)
+		valores.append(produto.valor)
+		nomes.append(produto.nome)
+	limite = 3 #podemos carregar três metros cubicos
+
+	individuo1 = Individuo(espacos, valores, limite)
+	print("espaços = %s" % str (individuo1.espacos))
+	print("valores = %s" % str (individuo1.valores))
+	print("cromossomo = %s" % str (individuo1.cromossomo))
+
+	print("\nComponente da carga")
+	for i in range(len(lista_produtos)):
+		if individuo1.cromossomo[i] == 1:
+			print("Nome: %s R$ %s" % (lista_produtos[i].nome, lista_produtos[i].valor))
 
 
 
