@@ -100,6 +100,10 @@ class AlgoritmoGenetico():
 			i += 1
 		return pai
 
+	def visualiza_geracao(self):
+		melhor = self.populacao[0]
+		print("Geração = %s --> Valor = %s Espaço = %s Cromosso = %s" % (self.populacao[0].geracao, melhor.nota_avaliacao, melhor.espaco_usado, melhor.cromossomo))
+
 
 if __name__ == '__main__':
 	#p1 = Produto("Iphone 6", 0.0000899, 2199.12)
@@ -131,39 +135,6 @@ if __name__ == '__main__':
 	taxa_mutacao = 0.01
 	numero_geracoes = 100
 	ag = AlgoritmoGenetico(tamanho_populacao)
+
 	
-	ag.inicializa_populacao(espacos, valores, limite)
-	for individuo in ag.populacao:
-		individuo.avaliacao()
-	ag.ordena_populacao()
-	ag.melhor_individuo(ag.populacao[0])
-	#for i in range(ag.tamanho_populacao):
-		#print("*** Indivíduos %s ***\n" % i, "Espaço = %s\n" % str(ag.populacao[i].espacos), "valores = %s\n" % str(ag.populacao[i].valores), "Cromosso = %s\n" % str(ag.populacao[i].cromossomo), "Nota = %s\n" % ag.populacao[i].nota_avaliacao)
-	#print("Melhor solução = %s" % ag.melhor_solucao.cromossomo, "Nota = %s\n" % ag.melhor_solucao.nota_avaliacao)
-
-	soma = ag.soma_avaliacoes()
-	#print("Soma das avaliações = %s" % soma)
-
-	nova_populacao = []
-	probabilidade_mutacao = 0.01
-
-
-	for individuos_gerados in range(0, ag.tamanho_populacao, 2):
-		pai1 = ag.seleciona_pai(soma)
-		pai2 = ag.seleciona_pai(soma)
-
-		filhos = ag.populacao[pai1].crossover(ag.populacao[pai2])
-		nova_populacao.append(filhos[0].mutacao(probabilidade_mutacao))
-		nova_populacao.append(filhos[1].mutacao(probabilidade_mutacao))
-
-	ag.populacao = list(nova_populacao)
-	for individuo in ag.populacao:
-		individuo.avaliacao()
-	ag.ordena_populacao()
-	ag.melhor_individuo(ag.populacao[0])
-	soma = ag.soma_avaliacoes()
-
-	print("Melhor = %s" % ag.melhor_solucao.cromossomo, "Valor = %s\n" % ag.melhor_solucao.nota_avaliacao)
-
-
 
