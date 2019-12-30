@@ -79,6 +79,15 @@ class AlgoritmoGenetico():
 	def ordena_populacao(self):
 		self.populacao = sorted(self.populacao, key = lambda populacao: populacao.nota_avaliacao, reverse = True)
 
+	def melhor_individuo(self, individuo):
+		if individuo.nota_avaliacao > self.melhor_solucao.nota_avaliacao:
+			self.melhor_solucao = individuo
+
+	def soma_avaliacoes(self):
+		soma = 0
+		for individuo in self.populacao:
+			soma += individuo.nota_avaliacao
+		return soma
 
 if __name__ == '__main__':
 	#p1 = Produto("Iphone 6", 0.0000899, 2199.12)
@@ -113,5 +122,12 @@ if __name__ == '__main__':
 	for individuo in ag.populacao:
 		individuo.avaliacao()
 	ag.ordena_populacao()
+	ag.melhor_individuo(ag.populacao[0])
 	for i in range(ag.tamanho_populacao):
 		print("*** Indivíduos %s ***\n" % i, "Espaço = %s\n" % str(ag.populacao[i].espacos), "valores = %s\n" % str(ag.populacao[i].valores), "Cromosso = %s\n" % str(ag.populacao[i].cromossomo), "Nota = %s\n" % ag.populacao[i].nota_avaliacao)
+	print("Melhor solução = %s" % ag.melhor_solucao.cromossomo, "Nota = %s\n" % ag.melhor_solucao.nota_avaliacao)
+
+	soma = ag.soma_avaliacoes()
+	print("Soma das avaliações = %s" % soma)
+ #paramos na aula 17 aos 2 minutos e 48 segundos
+
