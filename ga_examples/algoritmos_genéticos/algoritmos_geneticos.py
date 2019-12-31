@@ -102,7 +102,47 @@ class AlgoritmoGenetico():
 
 	def visualiza_geracao(self):
 		melhor = self.populacao[0]
-		print("Geração = %s --> Valor = %s Espaço = %s Cromosso = %s" % (self.populacao[0].geracao, melhor.nota_avaliacao, melhor.espaco_usado, melhor.cromossomo))
+		print("Geração = %s --> Valor = %s Espaço = %s Cromosso = %s" % (self.populacao[0].geracao, 
+			                                                             melhor.nota_avaliacao, 
+			                                                             melhor.espaco_usado, 
+			                                                             melhor.cromossomo))
+
+	def resolver(self, taxa_mutacao, numero_geracoes, espacos, valores, limite_espacos):
+		self.inicializa_populacao(espacos, valores, limite_espacos)
+
+		for individuo in self.populacao:
+			individuo.avaliacao()
+
+		self.ordena_populacao()
+
+		self.visualiza_geracao()
+
+		for geracao in range(numero_geracoes):
+			soma_avaliacao = self.soma_avaliacoes()
+			nova_populacao = []
+
+			for individuos_gerados in range(0, self.tamanho_populacao, 2):
+				pai1 = self.seleciona_pai(soma_avaliacao)
+				pai2 = self.seleciona_pai(soma_avaliacao)
+
+				filhos = self.populacao[pai1].crossover(self.populacao[pai2])
+
+				nova_populacao.append(filhos[0].mutacao(taxa_mutacao))
+				nova_populacao.append(filhos[1].mutacao(taxa_mutacao))
+
+			self.populacao = list(nova_populacao)
+
+			for individuo in self.populacao:
+				individuo.avaliacao()
+
+			self.ordena_populacao()
+
+			melhor = self.populacao[0]
+			self.melhor_individuo(melhor)
+
+		print("\nMelhor solução = G: %s Valor: %s Espaço: %s Cromosso: %s" % (self.melhor_solucao.geracao, self.melhor_solucao.nota_avaliacao, self.melhor_solucao.limite_espacos, self.melhor_solucao.cromossomo))
+
+		return self.melhor_solucao.cromossomo
 
 
 if __name__ == '__main__':
@@ -135,6 +175,11 @@ if __name__ == '__main__':
 	taxa_mutacao = 0.01
 	numero_geracoes = 100
 	ag = AlgoritmoGenetico(tamanho_populacao)
+	resultado = ag.resolver(taxa_mutacao, numero_geracoes, espacos, valores, limite)
+	for i in range(len(lista_produtos)):
+		if resultado[i] == 1:
+			print("Nome: %s R$: %s " %(lista_produtos[i].nome, 
+				                       lista_produtos[i].valor))
 
 	
 
