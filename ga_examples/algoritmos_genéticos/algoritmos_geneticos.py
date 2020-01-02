@@ -181,5 +181,5 @@ if __name__ == '__main__':
 			print("Nome: %s R$: %s " %(lista_produtos[i].nome, 
 				                       lista_produtos[i].valor))
 
-	
+#por que não está imprimindo todas as gerações???	
 
