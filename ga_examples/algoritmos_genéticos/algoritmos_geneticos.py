@@ -6,6 +6,7 @@ sobre: Construa passo a passo um algoritmo de Inteligência
 """
 
 from random import random
+import matplotlib.pyplot as plt
 
 class Produto():
 	def __init__(self, nome, espaco, valor):
@@ -70,6 +71,7 @@ class AlgoritmoGenetico():
 		self.populacao = []
 		self.geracao = 0
 		self.melhor_solucao = 0
+		self.lista_solucoes = [] #lista que vamos plotar
 
 	def inicializa_populacao(self, espacos, valores, limite_espacos):
 		for i in range(self.tamanho_populacao):
@@ -114,6 +116,8 @@ class AlgoritmoGenetico():
 			individuo.avaliacao()
 
 		self.ordena_populacao()
+		self.melhor_solucao = self.populacao[0]
+		self.lista_solucoes.append(self.melhor_solucao.nota_avaliacao)
 
 		self.visualiza_geracao()
 
@@ -138,6 +142,7 @@ class AlgoritmoGenetico():
 			self.ordena_populacao()
 
 			melhor = self.populacao[0]
+			self.lista_solucoes.append(melhor.nota_avaliacao)
 			self.melhor_individuo(melhor)
 
 		print("\nMelhor solução = G: %s Valor: %s Espaço: %s Cromosso: %s" % (self.melhor_solucao.geracao, self.melhor_solucao.nota_avaliacao, self.melhor_solucao.limite_espacos, self.melhor_solucao.cromossomo))
@@ -172,8 +177,8 @@ if __name__ == '__main__':
 		nomes.append(produto.nome)
 	limite = 3 #podemos carregar três metros cubicos
 	tamanho_populacao = 20
-	taxa_mutacao = 0.01
-	numero_geracoes = 100
+	taxa_mutacao = 0.05 #primeiros testes foram realizados com 0.01
+	numero_geracoes = 200 #primeiros testes foram realizados com 100
 	ag = AlgoritmoGenetico(tamanho_populacao)
 	resultado = ag.resolver(taxa_mutacao, numero_geracoes, espacos, valores, limite)
 	for i in range(len(lista_produtos)):
@@ -181,5 +186,10 @@ if __name__ == '__main__':
 			print("Nome: %s R$: %s " %(lista_produtos[i].nome, 
 				                       lista_produtos[i].valor))
 
+	#for valor in ag.lista_solucoes:
+	#	print(valor)
+	plt.plot(ag.lista_solucoes)
+	plt.title("Acompanhamento dos valores")
+	plt.show()
 #por que não está imprimindo todas as gerações???	
 
