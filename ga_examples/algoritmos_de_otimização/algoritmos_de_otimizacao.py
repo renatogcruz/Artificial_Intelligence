@@ -40,3 +40,28 @@ def get_minutos(hora):
 	return minutos
 
 get_minutos('6:13')
+get_minutos('23:53')
+get_minutos('00:00')
+
+def funcao_custo(solucao):
+	preco_total = 0
+	ultima_chegada = 0
+	primeira_partida = 1439
+
+	id_voo = -1
+	for i in range(len(solucao) // 2):
+		origem = pessoas[i][1]
+		id_voo += 1
+		ida = voos[(origem, destino)][solucao[id_voo]]
+		id_voo += 1
+		volta = voos[(destino, origem)][solucao[id_voo]]
+
+		preco_total += ida[2]
+		preco_total += volta[2]
+
+		if ultima_chegada < get_minutos(ida[1]):
+			ultima_chegada = get_minutos(ida[1])
+		
+		if primeira_partida > get_minutos(volta[0]):
+			primeira_partida = get_minutos(volta[0])
+
