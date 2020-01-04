@@ -82,4 +82,6 @@ def funcao_custo(solucao):
 
 	return preco_total + total_espera
 
+funcao_custo(agenda)
+
 
