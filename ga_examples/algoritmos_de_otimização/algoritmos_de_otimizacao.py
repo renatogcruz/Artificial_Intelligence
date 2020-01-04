@@ -65,3 +65,21 @@ def funcao_custo(solucao):
 		if primeira_partida > get_minutos(volta[0]):
 			primeira_partida = get_minutos(volta[0])
 
+	total_espera = 0
+	id_voo = -1
+	for i in range(len(solucao) // 2):
+		origem = pessoas[i][1]
+		id_voo += 1
+		ida = voos[(origem, destino)][solucao[id_voo]]
+		id_voo += 1
+		volta = voos[(destino, origem)][solucao[id_voo]]
+
+		total_espera += ultima_chegada - get_minutos(ida[1])
+		total_espera += get_minutos(volta[0]) - primeira_partida
+
+	if ultima_chegada > primeira_partida:
+		preco_total += 50 #penalidade
+
+	return preco_total + total_espera
+
+
