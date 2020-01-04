@@ -33,3 +33,10 @@ def imprimir_agenda(agenda):
 
 agenda = [1,4, 3,2, 7,3, 6,3, 2,4, 5,3]
 imprimir_agenda(agenda)
+
+def get_minutos(hora):
+	x = time.strptime(hora, '%H:%M')
+	minutos = x[3] * 60 + x[4]
+	return minutos
+
+get_minutos('6:13')
