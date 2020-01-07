@@ -87,7 +87,7 @@ funcao_custo(agenda)
 def pesquisa_randomica(dominio, funcao_custo):
 	melhor_custo = 99999999
 	for i in range(0, 1000):
-		solucao = [random.randint(dominio[i][0], dominio[0][1]) for i in range(len(dominio))]
+		solucao = [random.randint(dominio[i][0], dominio[i][1]) for i in range(len(dominio))]
 		custo = funcao_custo(solucao)
 		if custo < melhor_custo:
 			melhor_custo = custo
@@ -99,3 +99,27 @@ dominio = [(0,9)] * (len(pessoas) * 2)
 solucao_randomica = pesquisa_randomica(dominio, funcao_custo)
 custo_randomica = funcao_custo(solucao_randomica)
 imprimir_agenda(solucao_randomica)
+
+def subida_encosta(dominio, funcao_custo):
+	solucao = [random.randint(dominio[i][0], dominio[i][1]) for i in range(len(dominio))]
+	while True:
+		vizinhos = []
+
+		for i in range(len(dominio)):
+			if solucao[i] > dominio[i][0]:
+				if solucao_randomica != dominio[i][1]:
+					vizinhos.append(solucao[0:i] + [solucao[i] + 1] + solucao[i + 1])
+			if solucao[i] < dominio[i][1]:
+				if solucao[i] != dominio[i][0]:
+					vizinhos.append(solucao[0:i] + [solucao[i] - 1] + solucao[i + 1:])
+		atual = funcao_custo(solucao)
+		melhor = atual
+		for i in range(len(vizinhos)):
+			custo = funcao_custo(vizinhos[i])
+			if custo < melhor:
+				melhor = custo
+				solucao = vizinhos[i]
+
+		if melhor == atual:
+			break
+	return solucao
