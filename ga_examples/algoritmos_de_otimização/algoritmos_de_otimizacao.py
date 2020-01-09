@@ -155,3 +155,21 @@ def tempera_simulada(dominio, funcao_custo, temperatura = 10000.0, restriamento 
 #solucao_tempera_simulada = tempera_simulada(dominio, funcao_custo)
 #custo_subida_encosta = funcao_custo(solucao_tempera_simulada)
 #imprimir_agenda(solucao_tempera_simulada)
+
+def mutacao(dominio, passo, solucao):
+	i = random.randint(0, len(dominio) - 1)
+	mutante = solucao
+
+	if random.random() <= 0.5:
+		if solucao[i] != dominio[i][0]: 
+			mutante = solucao[0:i] + [solucao[i] - passo] + solucao[i + 1:]
+	else:
+		if solucao[i] != dominio[i][1]:
+			mutante = solucao[0:i] + [solucao[i] + passo] + solucao[i + 1:]
+	return mutante
+
+s = [1,4, 3,2, 7,3, 6,3, 2,4, 5,3]
+s1 = mutacao(dominio, 1, s)
+
+print(s)
+print(s1)
