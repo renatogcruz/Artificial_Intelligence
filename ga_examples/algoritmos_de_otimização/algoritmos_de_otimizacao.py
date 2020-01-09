@@ -214,3 +214,5 @@ def genetico(dominio, funcao_custo, tamanho_polulacao = 50, passo = 1, probabili
 #solucao_genetico = genetico(dominio, funcao_custo)
 #custo_genetico = funcao_custo(solucao_genetico
 #imprimir_agenda(solucao_genetico)
+
+print("\na")
