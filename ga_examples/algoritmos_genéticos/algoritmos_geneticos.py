@@ -177,7 +177,7 @@ if __name__ == '__main__':
 		nomes.append(produto.nome)
 	limite = 3 #podemos carregar três metros cubicos
 	tamanho_populacao = 20
-	taxa_mutacao = 0.05 #primeiros testes foram realizados com 0.01
+	taxa_mutacao = 0.02 #primeiros testes foram realizados com 0.01
 	numero_geracoes = 200 #primeiros testes foram realizados com 100
 	ag = AlgoritmoGenetico(tamanho_populacao)
 	resultado = ag.resolver(taxa_mutacao, numero_geracoes, espacos, valores, limite)
