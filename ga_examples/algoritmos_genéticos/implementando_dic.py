@@ -9,20 +9,21 @@ inputsDef = [{ "name": "input1", "type": "continuous", "range": [0,10]},
 		
 import random 
 
-dic = {"name": "largura", "min": 1, "max": 10}
+param1 = {"name": "largura", "min": 1.0, "max": 10.0}
+param2 = {"name": "comprimento", "min": 4.0, "max": 8.0}
 
-#print(dic["name"])
-#print(dic["min"])
-#print(type(dic["min"]))
-#print(dic["max"])
-#print(type(dic["max"]))
+#print(param1["name"])
+#print(param1["min"])
+#print(type(param1["min"]))
+#print(param1["max"])
+#print(type(param1["max"]))
 
-if (type(dic["min"]) == float) and (type(dic["max"]) == float):
-	print(type(dic["min"]))
-	print(random.uniform(dic["min"], dic["max"])) #para flot
+if (type(param1["min"]) == float) and (type(param1["max"]) == float):
+	print("Este paramêtro é do tipo 'float'")
+	print(random.uniform(param1["min"], param1["max"])) #para flot
 else:
-	print(type(dic["min"]))
-	print(random.randint(dic["min"], dic["max"])) #para int
+	print("Este paramêtro é do tipo 'inteiro'")
+	print(random.randint(param1["min"], param1["max"])) #para int
 
 
 #print(random.randint(dic["min"], dic["max"])) #para int
