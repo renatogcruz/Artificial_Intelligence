@@ -76,3 +76,7 @@ Hawker problem - [ezstoltz](https://github.com/ezstoltz/genetic-algorithm/blob/m
 
 
 ---
+
+### 
+
+1. [The Generative Design Collaborative](https://www.evolvelab.io/post/the-generative-design-collaborative)
