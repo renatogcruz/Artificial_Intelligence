@@ -1,6 +1,6 @@
-# Evolutionary-computing
+# Artificial Intelligence
 
-A repository of algorithm studies for global optimization inspired by biological evolution.
+A repository of AI studies
 
 # About
 
