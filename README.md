@@ -40,7 +40,7 @@ First example (Chapter 1) of Clinton Sheppard's book Genetic Algorithms with Pyt
 
 "We're going to optimize a very simple problem: trying to create a list of N numbers that equal X when summed together. [...]" 
 
-4. [Inteligenca_artificial_com_algoritmos_geneticos_em_R](https://github.com/renatogcruz/R/tree/main/Inteligenca_artificial_com_algoritmos_geneticos_em_R)
+4. [Inteligenca artificial com algoritmos geneticos em R](https://github.com/renatogcruz/R/tree/main/Inteligenca_artificial_com_algoritmos_geneticos_em_R)
 
 GA- An R package for stochastic optimisation using Genetic Algorithms.
 
