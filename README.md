@@ -23,6 +23,15 @@ UNTIL population has converged
 STOP
 ```
 
+# Trilha
+
+| Tables                                                      | Algoritmos de Inteligência Artificial | Machine Learning| Redes Neurais e Deep Lerning |
+|-------------------------------------------------------------|:-------------------------------------:|----------------:|-----------------------------:|
+| Programação em Python: O Guia para Iniciantes               |  Link                                 | Link            | Link                         |
+| Inteligência Artificial: Sistemas de Recomendação em Python |    centered                           |   $12           | $1600                        |
+
+[...] construindo
+
 # What you find here?
 
 ---
