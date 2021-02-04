@@ -85,6 +85,9 @@ First example (Chapter 1) of Clinton Sheppard's book Genetic Algorithms with Pyt
 
 GA- An R package for stochastic optimisation using Genetic Algorithms.
 
+5 - [Tnteligência Artificial Explicável (xAI) com Python](https://github.com/renatogcruz/python/tree/master/inteligencia_artifical_explicavel)
+
+Link do [curso](https://www.udemy.com/course/inteligencia-artificial-explicavel/)
 ---
 
 #### Particle Swarm Optimization - PSO
