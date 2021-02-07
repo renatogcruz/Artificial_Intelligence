@@ -84,6 +84,10 @@ Conheça conceitos e Técnicas Utilizadas para Tornar a Inteligência Artificial
 
 Link do [curso](https://www.udemy.com/course/inteligencia-artificial-explicavel/)
 
+Book - [A Guide for Making Black Box Models Explainable](https://christophm.github.io/interpretable-ml-book/) - by Christoph Molnar
+
+Book - [An Introduction to Machine Learning Interpretability](https://www.oreilly.com/library/view/an-introduction-to/9781098115487/) - by Patrick Hall, Navdeep Gill
+
 #### Particle Swarm Optimization - PSO
 
 ...
