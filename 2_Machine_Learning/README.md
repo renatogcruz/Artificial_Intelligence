@@ -1,4 +1,4 @@
-# Study guide for Neural Networks and Deep Learning.
+# Study guide for Machine Learning.
 
 A repository ...
 
