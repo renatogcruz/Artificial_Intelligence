@@ -41,13 +41,13 @@ This repository is dedicated to the study of Artificial Intelligence (AI) and si
 | TensorFlow, Deep Learning e Python: Construa um Chatbot     |                                       |                       | :black_square_button:        |
 
 
-# What else is there?
+# What else is here?
 
-#### genetic algorithms
+#### Inspiration
 
 Study of genetic algorithms (GA). A genetic algorithm is a search heuristic inspired by [Darwin's theory](https://en.wikipedia.org/wiki/Evolution) of natural evolution. This algorithm reflects the process of natural selection, where the fittest individuals are selected for breeding in order to produce offspring for the next generation.
 
-Pseudocode of genetic algorithms
+#### Pseudocode of genetic algorithms
 
 ```python
 START
@@ -61,6 +61,7 @@ REPEAT
 UNTIL population has converged
 STOP
 ```
+#### Classic problems
 
 1. [travelling salesman problem](https://github.com/renatogcruz/Evolutionary-computing/tree/master/ga_examples/hawker_problem)
 
@@ -87,20 +88,6 @@ Link do [curso](https://www.udemy.com/course/inteligencia-artificial-explicavel/
 Book - [A Guide for Making Black Box Models Explainable](https://christophm.github.io/interpretable-ml-book/) - by Christoph Molnar
 
 Book - [An Introduction to Machine Learning Interpretability](https://www.oreilly.com/library/view/an-introduction-to/9781098115487/) - by Patrick Hall, Navdeep Gill
-
-#### Particle Swarm Optimization - PSO
-
-...
-
-# Optimization for Dynamo
-
-1. [Optimo](https://github.com/mrahmaniasl/Optimo)
-
-Optimo is a multi-objective optimization tool and it is part of for BIM-based Performance Optimization (BPOpt) that is created to be used on Dynamo. Optimo is developed based on jmetal.NET open source code, which was originaly created by Antonio J. Nebro.
-
-# The Generative Design Collaborative 
-
-1. [The Generative Design Collaborative](https://www.evolvelab.io/post/the-generative-design-collaborative)
 
 
 # Reference
