@@ -10,7 +10,7 @@ This repository is dedicated to the study of Artificial Intelligence (AI) and si
 
 |                                                             | Algoritmos de Inteligência Artificial | Machine Learning      | Redes Neurais e Deep Lerning |
 |-------------------------------------------------------------|:-------------------------------------:|:---------------------:|:-----------------------------:|
-| Programação em Python: O Guia para Iniciantes               |  :white_check_mark:                   |:white_check_mark:     | :white_check_mark:           |
+| [Python Programming](https://github.com/renatogcruz/python/tree/master/python_guia_IAexpert)               |  :white_check_mark:                   |:white_check_mark:     | :white_check_mark:           |
 | Inteligência Artificial: Sistemas de Recomendação em Python |  :black_square_button:                |                       |                              |
 | Algoritmos Inteligentes de Busca                            |  :black_square_button:                |                       |                              |
 | Inteligência Artificial: Algoritmos de Otimização com Python|  :black_square_button:                |                       |                              |
