@@ -1,3 +1,5 @@
-#  Study guide for Artificial Intelligence algorithms
+#  Inteligência Artificial: Sistemas de Recomendação
 
-A repository ..
+Construção passo a passo de um sistemas de recomendação utilizando a técnica de filtragem colaborativa aplicado no cenário de recomendação de filmes.
+
+Referência: [Inteligência Artificial: Sistemas de Recomendação em Python](https://iaexpert.academy/courses/sistemas-recomendacao-python/)
