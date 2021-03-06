@@ -6,39 +6,71 @@ A repository of AI studies
 
 This repository is dedicated to the study of Artificial Intelligence (AI) and similar algorithms.
 
-# Study guide
+# Algoritmos de Inteligência Artificial
 
-|                                                             | Algoritmos de Inteligência Artificial | Machine Learning      | Redes Neurais e Deep Lerning |
-|-------------------------------------------------------------|:-------------------------------------:|:---------------------:|:-----------------------------:|
-| Programação em Python: O Guia para Iniciantes               |  :white_check_mark:                   |:white_check_mark:     | :white_check_mark:           |
-| Inteligência Artificial: Sistemas de Recomendação em Python |  :black_square_button:                |                       |                              |
-| Algoritmos Inteligentes de Busca                            |  :black_square_button:                |                       |                              |
-| Inteligência Artificial: Algoritmos de Otimização com Python|  :black_square_button:                |                       |                              |
-| Algoritmos Genéticos                                        |  :black_square_button:                |                       |                              |
-| Inteligência Artificial: Buscas em Textos com Python        |  :black_square_button:                |                       |                              |
-| Machine Learning e Data Science                             |                                       |:black_square_button:  |                              |
-| Estatística para Ciência de Dados e Machine Learning        |                                       |:black_square_button:  |                              |
-| Python para Finanças: Análise de Dados e Machine Learning   |                                       |:black_square_button:  |                              |
-| Mineração de Regras de Associação                           |                                       |:black_square_button:  |                              |
-| Mineração de Emoção em Textos com Python e NLTK             |                                       |:black_square_button:  |                              |
-| Mineração e Análise de Dados do LinkedIn                    |                                       |:black_square_button:  |                              |
-| Machine Learning para Competições Kaggle: Curso 1           |                                       |:black_square_button:  |                              |
-| Machine Learning para Competições Kaggle: Curso 2           |                                       |:black_square_button:  |                              |
-| Deep Learning com Python de A à Z: O Curso Completo         |                                       |:black_square_button:  |                              |
-| Machine Learning para Competições Kaggle: Especial COVID-19 |                                       |:black_square_button:  |                              |
-| Ciência de Dados para Empresas e Negócios                   |                                       |:black_square_button:  |                              |
-| Aprendizagem por Reforço com Deep Learning, PyTorch e Python|                                       |:black_square_button:  |                              |
-| Inteligência Artificial aplicada para Empresas e Negócios   |                                       |:black_square_button:  |                              |
-| Aprendizagem por Reforço com Augmented Random Search (ARS)  |                                       |:black_square_button:  |                              |
-| Redes Neurais Artificiais                                   |                                       |                       | :black_square_button:        |
-| Deep Learning de A à Z com PyTorch e Python                 |                                       |                       | :black_square_button:        |
-| TensorFlow: Machine Learning e Deep Learning com Python     |                                       |                       | :black_square_button:        |
-| TensorFlow 2.0: Um Guia Completo sobre o novo TensorFlow    |                                       |                       | :black_square_button:        |
-| Deep Learning Prático com TensorFlow e Python               |                                       |                       | :black_square_button:        |
-| Reconhecimento de Emoções com TensorFlow 2.0 e Python       |                                       |                       | :black_square_button:        |
-| Processamento de Linguagem Natural com Deep Learning        |                                       |                       | :black_square_button:        |
-| Processamento de Linguagem Natural com BERT e Python        |                                       |                       | :black_square_button:        |
-| TensorFlow, Deep Learning e Python: Construa um Chatbot     |                                       |                       | :black_square_button:        |
+1 - [Python Programming](https://github.com/renatogcruz/python/tree/master/python_guia_IAexpert)  
+
+2 - Inteligência Artificial: Sistemas de Recomendação em Python 
+
+3 - Algoritmos Inteligentes de Busca                            
+
+4 - Inteligência Artificial: Algoritmos de Otimização com Python
+
+5 - Algoritmos Genéticos                                        
+
+6 - Inteligência Artificial: Buscas em Textos com Python       
+
+
+#  Machine Learning 
+
+1 - Machine Learning e Data Science                             
+
+2 - Estatística para Ciência de Dados e Machine Learning 
+
+3 - Python para Finanças: Análise de Dados e Machine Learning 
+
+4 - Mineração de Regras de Associação
+
+5 - Mineração de Emoção em Textos com Python e NLTK 
+
+6 - Mineração e Análise de Dados do LinkedIn 
+
+7 - Machine Learning para Competições Kaggle: Curso 1 
+
+8 - Machine Learning para Competições Kaggle: Curso 2
+
+9 - Deep Learning com Python de A à Z: O Curso Completo  
+
+10 - Machine Learning para Competições Kaggle: Especial COVID-19
+
+11 - Ciência de Dados para Empresas e Negócios
+
+12 - Aprendizagem por Reforço com Deep Learning, PyTorch e Python
+
+13 - Inteligência Artificial aplicada para Empresas e Negócios
+
+14 - Aprendizagem por Reforço com Augmented Random Search (ARS)
+
+
+# Redes Neurais e Deep Lerning
+
+1 - Redes Neurais Artificiais   
+
+2 - Deep Learning de A à Z com PyTorch e Python 
+
+3 - TensorFlow: Machine Learning e Deep Learning com Python 
+
+4 - TensorFlow 2.0: Um Guia Completo sobre o novo TensorFlow 
+
+5 - Deep Learning Prático com TensorFlow e Python 
+
+6 - Reconhecimento de Emoções com TensorFlow 2.0 e Python 
+
+7 - Processamento de Linguagem Natural com Deep Learning 
+
+8 - Processamento de Linguagem Natural com BERT e Python
+
+10 - TensorFlow, Deep Learning e Python: Construa um Chatbot 
 
 
 # What else is here?
