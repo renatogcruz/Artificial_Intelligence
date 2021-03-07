@@ -8,17 +8,17 @@ This repository is dedicated to the study of Artificial Intelligence (AI) and si
 
 # Algoritmos de Inteligência Artificial
 
-1 - [Python Programming](https://github.com/renatogcruz/python/tree/master/python_guia_IAexpert)  
+1 - [Programação com Python](https://github.com/renatogcruz/python/tree/master/python_guia_IAexpert)  
 
-2 - Inteligência Artificial: Sistemas de Recomendação em Python 
+2 - [Sistemas de Recomendação em Python](https://github.com/renatogcruz/Artificial_Intelligence/tree/master/1_Artificial_Intelligence_Algorithms/2_sistemas_de_recomendacao)
 
 3 - Algoritmos Inteligentes de Busca                            
 
-4 - Inteligência Artificial: Algoritmos de Otimização com Python
+4 - Algoritmos de Otimização com Python
 
 5 - Algoritmos Genéticos                                        
 
-6 - Inteligência Artificial: Buscas em Textos com Python       
+6 - Buscas em Textos com Python       
 
 
 #  Machine Learning 
@@ -60,7 +60,7 @@ This repository is dedicated to the study of Artificial Intelligence (AI) and si
 
 3 - TensorFlow: Machine Learning e Deep Learning com Python 
 
-4 - TensorFlow 2.0: Um Guia Completo sobre o novo TensorFlow 
+4 - TensorFlow 2.0: Guia Completo 
 
 5 - Deep Learning Prático com TensorFlow e Python 
 
