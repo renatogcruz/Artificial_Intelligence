@@ -12,7 +12,7 @@ This repository is dedicated to the study of Artificial Intelligence (AI) and si
 
 2 - [Sistemas de Recomendação em Python](https://github.com/renatogcruz/Artificial_Intelligence/tree/master/1_Artificial_Intelligence_Algorithms/2_sistemas_de_recomendacao)
 
-3 - Algoritmos Inteligentes de Busca                            
+3 - [Algoritmos Inteligentes de Busca](https://github.com/renatogcruz/Artificial_Intelligence/tree/master/1_Artificial_Intelligence_Algorithms/3_algoritmos_inteligentes_de_busca)                            
 
 4 - Algoritmos de Otimização com Python
 
