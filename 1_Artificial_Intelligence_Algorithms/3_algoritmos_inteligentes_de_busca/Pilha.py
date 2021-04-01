@@ -32,6 +32,29 @@ class Pilha:
         return (self.topo == self.tamanho -1)
     
     
+# Dpuração
+
+from Mapa import Mapa
         
+mapa = Mapa()
+pilha = Pilha(5)
+
+pilha.empilhar(mapa.cidade1)
+pilha.empilhar(mapa.cidade2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         

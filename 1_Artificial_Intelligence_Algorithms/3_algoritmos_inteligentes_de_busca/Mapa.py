@@ -83,6 +83,7 @@ class Mapa:
     
 
 # testes
+'''
 mapa = Mapa()
 
 nome = mapa.cidade1.nome
@@ -96,4 +97,5 @@ print(adj)
 
 for cidade in range(len(mapa.cidade1.adjacentes)):
     print(mapa.cidade1.adjacentes[cidade].cidade.nome)
+'''
     
