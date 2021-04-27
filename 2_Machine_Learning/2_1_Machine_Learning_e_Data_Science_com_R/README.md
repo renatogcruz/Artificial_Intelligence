@@ -19,3 +19,9 @@ K-means, agrupamento hierárquico, DBSCAN, base de dados de gastos no cartão de
 - **Parte 5 - Tópicos complementares**
 
 
+## livros sobre Machine Learning
+
+- Introduction to Machine Learning de Ethem Alpaydin
+
+- Foundations of Machine Learning de Mohri Mehryar
+
