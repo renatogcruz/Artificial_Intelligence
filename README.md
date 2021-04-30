@@ -77,6 +77,9 @@ This repository is dedicated to the study of Artificial Intelligence (AI) and si
 
 10 - TensorFlow, Deep Learning e Python: Construa um Chatbot 
 
+## Netron
+
+[Netron](https://github.com/lutzroeder/netron) is a viewer for neural network, deep learning and machine learning models.
 
 # What else is here?
 
